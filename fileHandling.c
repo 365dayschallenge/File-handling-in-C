@@ -5,7 +5,7 @@ int main()
     FILE *fp;
     char name[100];
 
-    fp = fopen("test.txt", "r");
+    fp = fopen("test.txt", "r+");
     if (!fp)
         printf("File is not created");
     else
@@ -18,7 +18,7 @@ int main()
         fprintf(fp, "%s\n", name);
     }
 
-    fclose(fp);
+  fclose(fp);
 
     return 0;
 }
